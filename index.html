@@ -8,10 +8,21 @@
           <!-- Bootstrap CSS -->
           <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
 
+          <!-- AOS -->
+          <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
           <!-- My CSS -->
           <style>
                section {
                     padding-top: 5rem;
+               }
+
+               .gallery-img {
+                    width: 100%;
+               }
+
+               #gallery .row > * {
+                    padding: 0;
                }
           </style>
 
@@ -37,6 +48,9 @@
                                    <a class="nav-link" href="#project">Project</a>
                               </li>
                               <li class="nav-item">
+                                   <a class="nav-link" href="#gallery">Gallery</a>
+                              </li>
+                              <li class="nav-item">
                                    <a class="nav-link" href="#contact">Contact</a>
                               </li>
                          </ul>
@@ -47,9 +61,9 @@
 
           <!-- jumbotron -->
           <section class="jumbotron text-center pt-md-5 text-light bg-primary">
-               <img src="pp.jpg" alt="www.kris.com" width="200rem" class="rounded-circle mb-md-4" style="margin-top: 3rem" />
+               <img src="pp.jpg" alt="krisgyon.github.io" width="200rem" class="rounded-circle mb-md-4" style="margin-top: 3rem" />
                <h1 class="display-4">Agustinus Kristi Aryanto</h1>
-               <p class="lead" style="font-size: 1.5rem mb-5">Operator Fotocopy | Tukang Isi Ulang Air</p>
+               <p class="lead" style="font-size: 1.5rem mb-5"></p>
                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                     <path
                          fill="#ffffff"
@@ -63,19 +77,19 @@
           <!-- about -->
           <section id="about">
                <div class="container mb-5 text-primary">
-                    <div class="row text-center mb-md-4">
+                    <div class="row text-center mb-md-4" data-aos="zoom-in-up">
                          <div class="col">
                               <h2>About</h2>
                          </div>
                     </div>
                     <div class="row justify-content-center fs-5">
-                         <div class="col-md-4 mb-5">
+                         <div class="col-md-4 mb-5" data-aos="fade-right">
                               <p>
                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Suscipit corrupti fuga magni incidunt error ducimus dignissimos soluta, commodi enim nulla eligendi harum perferendis, fugit obcaecati dolor autem
                                    a ipsam tempore!
                               </p>
                          </div>
-                         <div class="col-md-4 mb-5">
+                         <div class="col-md-4 mb-5" data-aos="fade-left">
                               <p>
                                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti corporis soluta labore quas eius accusantium quibusdam animi vero magni harum minus alias necessitatibus numquam cupiditate ducimus odit
                                    placeat, nesciunt sapiente?
@@ -96,47 +110,47 @@
           <!-- project -->
           <section id="project" class="bg-primary">
                <div class="container">
-                    <div class="row text-center mb-md-4 text-light">
+                    <div class="row text-center mb-md-4 text-light" data-aos="zoom-in-up">
                          <div class="col">
                               <h2>Project</h2>
                          </div>
                     </div>
                     <div class="row justify-content-evenly">
-                         <div class="col-md-4 mb-4">
+                         <div class="col-md-4 mb-md-4" data-aos="flip-right" data-aos-duration="500" data-aos-delay="100">
                               <div class="card">
-                                   <img src="pp copy.png" class="card-img-top" alt="www.kris.com" />
+                                   <img src="pp copy.png" class="card-img-top" alt="krisgyon.github.io" />
                                    <div class="card-body">
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                    </div>
                               </div>
                          </div>
-                         <div class="col-md-4 mb-4">
+                         <div class="col-md-4" data-aos="flip-right" data-aos-duration="500" data-aos-delay="200">
                               <div class="card">
-                                   <img src="pp copy.png" class="card-img-top" alt="www.kris.com" />
+                                   <img src="pp copy.png" class="card-img-top" alt="krisgyon.github.io" />
                                    <div class="card-body">
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                    </div>
                               </div>
                          </div>
-                         <div class="col-md-4 mb-4">
+                         <div class="col-md-4" data-aos="flip-right" data-aos-duration="500" data-aos-delay="300">
                               <div class="card">
-                                   <img src="pp copy.png" class="card-img-top" alt="www.kris.com" />
+                                   <img src="pp copy.png" class="card-img-top" alt="krisgyon.github.io" />
                                    <div class="card-body">
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                    </div>
                               </div>
                          </div>
-                         <div class="col-md-4 mb-4">
+                         <div class="col-md-4 mb-4" data-aos="flip-right" data-aos-duration="500" data-aos-delay="400">
                               <div class="card">
-                                   <img src="pp copy.png" class="card-img-top" alt="www.kris.com" />
+                                   <img src="pp copy.png" class="card-img-top" alt="krisgyon.github.io" />
                                    <div class="card-body">
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                    </div>
                               </div>
                          </div>
-                         <div class="col-md-4 mb-4">
+                         <div class="col-md-4 mb-4" data-aos="flip-right" data-aos-duration="500" data-aos-delay="500">
                               <div class="card">
-                                   <img src="pp copy.png" class="card-img-top" alt="www.kris.com" />
+                                   <img src="pp copy.png" class="card-img-top" alt="krisgyon.github.io" />
                                    <div class="card-body">
                                         <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                    </div>
@@ -154,9 +168,80 @@
           </section>
           <!-- akhir project -->
 
-          <!-- contact -->
-          <section id="contact">
+          <!-- gallery -->
+          <section id="gallery">
                <div class="container text-primary">
+                    <div class="row text-center mb-md-4" data-aos="zoom-in-up">
+                         <div class="col">
+                              <h2>Gallery</h2>
+                         </div>
+                    </div>
+                    <div class="row justify-content-center">
+                         <div class="col-md-3">
+                              <a href="">
+                                   <img src="senja copy.png" alt="krisgyon.github.io" class="img-fluid gallery-img" />
+                              </a>
+                         </div>
+                         <div class="col-md-3">
+                              <a href="">
+                                   <img src="senja copy.png" alt="krisgyon.github.io" class="img-fluid gallery-img" />
+                              </a>
+                         </div>
+                         <div class="col-md-3">
+                              <a href="">
+                                   <img src="senja copy.png" alt="krisgyon.github.io" class="img-fluid gallery-img" />
+                              </a>
+                         </div>
+                         <div class="col-md-3">
+                              <a href="">
+                                   <img src="senja copy.png" alt="krisgyon.github.io" class="img-fluid gallery-img" />
+                              </a>
+                         </div>
+                         <div class="col-md-3">
+                              <a href="">
+                                   <img src="senja copy.png" alt="krisgyon.github.io" class="img-fluid gallery-img" />
+                              </a>
+                         </div>
+                         <div class="col-md-3">
+                              <a href="">
+                                   <img src="senja copy.png" alt="krisgyon.github.io" class="img-fluid gallery-img" />
+                              </a>
+                         </div>
+                         <div class="col-md-3">
+                              <a href="">
+                                   <img src="senja copy.png" alt="krisgyon.github.io" class="img-fluid gallery-img" />
+                              </a>
+                         </div>
+                         <div class="col-md-3">
+                              <a href="">
+                                   <img src="senja copy.png" alt="krisgyon.github.io" class="img-fluid gallery-img" />
+                              </a>
+                         </div>
+                         <div class="col-md-3">
+                              <a href="">
+                                   <img src="senja copy.png" alt="krisgyon.github.io" class="img-fluid gallery-img" />
+                              </a>
+                         </div>
+                         <div class="col-md-3">
+                              <a href="">
+                                   <img src="senja copy.png" alt="krisgyon.github.io" class="img-fluid gallery-img" />
+                              </a>
+                         </div>
+                    </div>
+               </div>
+               <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                    <path
+                         fill="#0d6efd"
+                         fill-opacity="1"
+                         d="M0,192L48,186.7C96,181,192,171,288,144C384,117,480,75,576,85.3C672,96,768,160,864,186.7C960,213,1056,203,1152,202.7C1248,203,1344,213,1392,218.7L1440,224L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+                    ></path>
+               </svg>
+          </section>
+          <!-- akhir galery -->
+
+          <!-- contact -->
+          <section id="contact" class="bg-primary">
+               <div class="container text-light">
                     <div class="row text-center mb-md-4">
                          <div class="col">
                               <h2>Contact</h2>
@@ -181,9 +266,9 @@
                                         <label for="pesan" class="form-label">Kritik dan Saran</label>
                                         <textarea class="form-control" id="pesan" rows="3" name="pesan"></textarea>
                                    </div>
-                                   <button type="submit" class="btn btn-primary btn-kirim">Kirim</button>
+                                   <button type="submit" class="btn btn-light text-primary btn-kirim">Kirim</button>
 
-                                   <button class="btn btn-primary btn-loading d-none" type="button" disabled>
+                                   <button class="btn btn-light text-primary btn-loading d-none" type="button" disabled>
                                         <span class="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>
                                         Loading...
                                    </button>
@@ -193,7 +278,7 @@
                </div>
                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                     <path
-                         fill="#0d6efd"
+                         fill="#ffffff"
                          fill-opacity="1"
                          d="M0,128L48,149.3C96,171,192,213,288,218.7C384,224,480,192,576,154.7C672,117,768,75,864,80C960,85,1056,139,1152,149.3C1248,160,1344,128,1392,112L1440,96L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
                     ></path>
@@ -202,7 +287,7 @@
           <!-- akhir contact -->
 
           <!-- footer -->
-          <footer class="bg-primary text-white text-center pb-md-4">
+          <footer class="text-primary text-center pb-md-4">
                <p>
                     Created with
                     <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="red" class="bi bi-instagram" viewBox="0 0 16 16">
@@ -210,11 +295,39 @@
                               d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"
                          />
                     </svg>
-                    by <a href="https://www.instagram.com/kris.gyon" class="text-white fw-bold">kris</a>
+                    by <a href="https://www.instagram.com/kris.gyon" class="text-primary fw-bold">kris</a>
                </p>
           </footer>
           <!-- akhir footer -->
+
           <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+
+          <!-- AOS -->
+          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+          <script>
+               const galleryImg = document.querySelectorAll(".gallery-img");
+
+               galleryImg.forEach((img, i) => {
+                    img.dataset.aos = "fade-down";
+                    img.dataset.aosDelay = i * 50;
+                    img.dataset.aosDuration = 1000;
+               });
+
+               AOS.init({
+                    once: true,
+                    duration: 1000,
+               });
+          </script>
+
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/gsap.min.js"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.3/TextPlugin.min.js"></script>
+          <script>
+               gsap.registerPlugin(TextPlugin);
+               gsap.to(".lead", { duration: 2, delay: 1.5, text: "Operator Fotocopy | Tukang Isi Ulang Air" });
+               gsap.from(".jumbotron img", { duration: 1, rotateY: 360, opacity: 0 });
+               gsap.from(".navbar", { duration: 1.5, y: "-100%", opacity: 0, ease: "bounce" });
+               gsap.from(".display-4", { duration: 1, x: -50, opacity: 0, delay: 0.5, ease: "back" });
+          </script>
 
           <script>
                const scriptURL = "https://script.google.com/macros/s/AKfycbx-oq78H195DYq7N6DKijoIg382eTkdOg4-0kzVgRSRZ3VgrH13Jk9X2zhejYMH5f5H/exec";
