@@ -21,8 +21,41 @@
                     width: 100%;
                }
 
+               #project .row > * {
+                    margin-bottom: 1.5rem;
+               }
+
                #gallery .row > * {
                     padding: 0;
+               }
+
+               /* kucrit section */
+               .kris-box {
+                    position: relative;
+                    background-color: #6c757d;
+                    border-radius: 10px;
+                    height: 500px;
+               }
+
+               .kris-box::before {
+                    content: "MY";
+                    position: absolute;
+                    color: #fff;
+                    font-size: 6rem;
+                    font-weight: bold;
+                    font-style: italic;
+                    left: 50%;
+                    top: 30px;
+                    top: 30px;
+                    left: -100px;
+                    opacity: 0;
+                    transition: 0.5s;
+               }
+
+               .kris-box:hover::before {
+                    left: 50%;
+                    transform: translate(-50%);
+                    opacity: 1;
                }
           </style>
 
@@ -158,6 +191,25 @@
                          </div>
                     </div>
                </div>
+
+               <section id="kucrit">
+                    <div class="container">
+                         <div class="row text-center mb-md-4 text-light" data-aos="zoom-in-up">
+                              <div class="col">
+                                   <h2>Foto</h2>
+                              </div>
+                         </div>
+                         <div class="row">
+                              <div class="col-md-6 col-lg-4 mb-4">
+                                   <div class="kris-box">
+                                        <h4 class="kris-name">Kris 1</h4>
+                                        <a href="" class="btn btn-light">Show Details</a>
+                                   </div>
+                              </div>
+                         </div>
+                    </div>
+               </section>
+
                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                     <path
                          fill="#ffffff"
