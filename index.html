@@ -35,27 +35,86 @@
                     background-color: #6c757d;
                     border-radius: 10px;
                     height: 500px;
+                    transform-style: preserve-3d;
                }
 
                .kris-box::before {
                     content: "MY";
                     position: absolute;
                     color: #fff;
-                    font-size: 6rem;
+                    font-size: 5em;
                     font-weight: bold;
                     font-style: italic;
                     left: 50%;
                     top: 30px;
-                    top: 30px;
-                    left: -100px;
+                    transform: translate(-50%);
                     opacity: 0;
                     transition: 0.5s;
                }
 
                .kris-box:hover::before {
-                    left: 50%;
-                    transform: translate(-50%);
                     opacity: 1;
+               }
+
+               .kris-box::after {
+                    content: "KRIS";
+                    position: absolute;
+                    color: #fff;
+                    font-size: 5em;
+                    font-weight: bold;
+                    font-style: italic;
+                    bottom: 30px;
+                    transform: translate(50%);
+                    right: 50%;
+                    opacity: 0;
+                    transition: 0.5s;
+               }
+               .kris-box:hover::after {
+                    opacity: 1;
+               }
+
+               .kris-name {
+                    position: absolute;
+                    top: 0;
+                    color: #fff;
+                    font-size: 2em;
+                    text-align: center;
+                    width: 100%;
+                    transform: translate3d(0, 0, 50px);
+                    transition: 0.5s;
+                    opacity: 0;
+               }
+
+               .kris-box:hover .kris-name {
+                    top: 12px;
+                    opacity: 1;
+               }
+
+               .kris-details-bottom {
+                    position: absolute;
+                    bottom: -50px;
+                    left: 50%;
+                    transform: translate3d(-50%, 0, 80px);
+                    opacity: 0;
+                    transition: 0.5s;
+               }
+
+               .kris-box:hover .kris-details-bottom {
+                    bottom: 8px;
+                    opacity: 1;
+               }
+
+               .kris-img {
+                    position: absolute;
+                    bottom: 150px;
+                    right: 50%;
+                    transform: translate3d(50%, 0, 100px);
+                    max-width: 10rem;
+                    transition: 0.5s;
+               }
+
+               .kris-box:hover .kris-img {
+                    transform: translate3d(50%, 0, 100px) scale(1.2);
                }
           </style>
 
@@ -203,7 +262,22 @@
                               <div class="col-md-6 col-lg-4 mb-4">
                                    <div class="kris-box">
                                         <h4 class="kris-name">Kris 1</h4>
-                                        <a href="" class="btn btn-light">Show Details</a>
+                                        <img src="kris.png" alt="krisgyon.github.io" class="kris-img" />
+                                        <a href="" class="btn btn-light kris-details-bottom">Show Details</a>
+                                   </div>
+                              </div>
+                              <div class="col-md-6 col-lg-4 mb-4">
+                                   <div class="kris-box">
+                                        <h4 class="kris-name">Kris 1</h4>
+                                        <img src="kris.png" alt="krisgyon.github.io" class="kris-img" />
+                                        <a href="" class="btn btn-light kris-details-bottom">Show Details</a>
+                                   </div>
+                              </div>
+                              <div class="col-md-6 col-lg-4 mb-4">
+                                   <div class="kris-box">
+                                        <h4 class="kris-name">Kris 1</h4>
+                                        <img src="kris.png" alt="krisgyon.github.io" class="kris-img" />
+                                        <a href="" class="btn btn-light kris-details-bottom">Show Details</a>
                                    </div>
                               </div>
                          </div>
@@ -407,6 +481,15 @@
                               console.log("Success!", response);
                          })
                          .catch((error) => console.error("Error!", error.message));
+               });
+          </script>
+
+          <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+          <script type="text/javascript">
+               VanillaTilt.init(document.querySelectorAll(".kris-box"), {
+                    max: 15,
+                    speed: 1000,
+                    glare: true,
                });
           </script>
      </body>
